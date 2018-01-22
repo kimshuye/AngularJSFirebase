@@ -8,10 +8,17 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ProductsComponent } from './components/products/products.component';
+import { OrdersComponent } from './components/orders/orders.component';
+import { PurchaseordersComponent } from './components/purchaseorders/purchaseorders.component';
 
 const appRoutes: Routes = [
   {path:'',component:HomeComponent}
+  ,{path:'products',component:ProductsComponent}
+  ,{path:'orders',component:OrdersComponent}
+  ,{path:'purchaseorders',component:PurchaseordersComponent}
   ,{path:'about',component:AboutComponent}
+  
   //,{path:'{name path}',component}
 
 ];
@@ -21,7 +28,10 @@ const appRoutes: Routes = [
     AppComponent,
     HomeComponent,
     AboutComponent,
-    NavbarComponent
+    NavbarComponent,
+    ProductsComponent,
+    OrdersComponent,
+    PurchaseordersComponent
   ],
   imports: [
     BrowserModule,
