@@ -6,17 +6,22 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 const appRoutes: Routes = [
   {path:'',component:HomeComponent}
-  //,{path:'{name path}',{component}}
+  ,{path:'about',component:AboutComponent}
+  //,{path:'{name path}',component}
 
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    AboutComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
