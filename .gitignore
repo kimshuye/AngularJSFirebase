@@ -9,6 +9,7 @@
 
 # project config
 /src/environments/firebase.config.ts
+/src/environments/environment.ts
 
 # IDEs and editors
 /.idea
