@@ -3,8 +3,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router'; 
-import { AngularFireModule } from 'angularfire2';
-import { environment } from '../environments/environment';
+//import { AngularFireModule } from 'angularfire2';
+//import { environment } from '../environments/environment';
+import { FirebaseService } from './services/firebase.service' ;
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -37,13 +38,15 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    AngularFireModule.initializeApp(environment.firebase ),
+    //AngularFireModule.initializeApp(environment.firebase ),
     FormsModule,
     HttpModule,
     RouterModule.forRoot(appRoutes)
 
   ],
-  providers: [],
+  providers: [
+    FirebaseService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
